@@ -1,4 +1,4 @@
-# Project Name
+# FastVite Web
 This project is a web application consisting of a client-side Vue.js application built with Vite and a server-side API built with Fastify.
 
 ## Technologies Used
