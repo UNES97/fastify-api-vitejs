@@ -1,14 +1,6 @@
 # Project Name
 This project is a web application consisting of a client-side Vue.js application built with Vite and a server-side API built with Fastify.
 
-## Project Structure
-The project has the following structure:
-
-- client: Contains the client-side Vue.js application.
-- app: Contains the Vite Vue.js application.
-- server: Contains the server-side API built with Fastify.
-- Dockerfile: Dockerfile for building the Docker image.
-
 ## Technologies Used
 - Vue.js: Frontend JavaScript framework.
 - Vite: Next-generation frontend build tool.
@@ -39,11 +31,3 @@ To run the application locally, follow these steps:
     docker run -p 3000:3000 project-name
     ```
 5. Access the application in your web browser at [http://localhost:3000](http://localhost:3000).
-
-## Additional Notes
-- The client-side application is located in the `client/app` directory and is built with Vite Vue.
-- The server-side API is located in the `server` directory and is built with Fastify.
-- The dashboard is built using HTML.
-
-## License
-This project is licensed under the MIT License.
