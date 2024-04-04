@@ -11,5 +11,5 @@ WORKDIR /home/node/app/server
 USER root
 RUN npm i
 
-EXPOSE 5000
+EXPOSE 3000
 CMD [ "node", "server.js" ]

@@ -29,7 +29,7 @@ fastify.get('/', function handler(request, reply) {
 
 fastify.register(require('./routes/items.routes') , {prefix: 'api'})
 
-fastify.listen({ port: 5000 }, (err) => {
+fastify.listen({ port: 3000 }, (err) => {
     if (err) {
         fastify.log.error(err)
         process.exit(1)
