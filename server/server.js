@@ -3,6 +3,7 @@ const errorCodes = fastify.errorCodes
 const cors = require('@fastify/cors');
 const path = require('node:path');
 const fastifyStatic = require('@fastify/static')
+require('dotenv').config()
 
 
 fastify.register(fastifyStatic, {
@@ -29,7 +30,7 @@ fastify.get('/', function handler(request, reply) {
 
 fastify.register(require('./routes/items.routes') , {prefix: 'api'})
 
-fastify.listen({ port: 3000, host: '0.0.0.0' }, (err) => {
+fastify.listen({ port: process.env.APP_PORT || 3000, host: process.env.APP_HOST }, (err) => {
     if (err) {
         fastify.log.error(err)
         process.exit(1)
